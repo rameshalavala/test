@@ -30,10 +30,10 @@ node {
       /* stage('mail'){
 
          mail body: 'project build successful',
-                     from: 'devopstrainingblr@gmail.com',
-                     replyTo: 'mithunreddytechnologies@gmail.com',
+                     from: 'ramesh.alavala@gmail.com',
+                     replyTo: 'ramesh.alavala@ascendum.com',
                      subject: 'project build successful',
-                     to: 'mithunreddytechnologies@gmail.com'
+                     to: 'ramesh.alavala@ascendum.com'
        }*/
 	    
 	    
@@ -44,11 +44,12 @@ node {
         currentBuild.result = "FAILURE"
 
            /* mail body: "project build error is here: ${env.BUILD_URL}" ,
-            from: 'devopstrainingblr@gmail.com',
-            replyTo: 'mithunreddytechnologies@gmail.com',
+            from: 'ramesh.alavala@gmail.com',
+            replyTo: 'ramesh.alavala@ascendum.com',
             subject: 'project build failed',
-            to: 'mithunreddytechnologies@gmail.com'
+            to: 'ramesh.alavala@ascendum.com’
             */
         throw err
     }
 }
+
